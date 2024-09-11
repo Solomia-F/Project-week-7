@@ -7,6 +7,46 @@
     <title>Weather App</title>
   </head>
   <body>
+    <div class="container">
+      <header>
+        <h1 id="current-temperature"></h1>
+        <h2 id="weather-app-city"></h2>
+      </header>
+      <main>
+        <form id="search-form">
+          <input
+            type="search"
+            id="search-input"
+            class="search-input"
+            placeholder="Enter a city"
+            required
+          />
+          <input
+            type="submit"
+            id="submit-input"
+            class="submit-input"
+            value="Search"
+          />
+        </form>
+        <div class="current-weather">
+          <div class="current-weather-details">
+            <h3 id="time"></h3>
+            <p>
+              <span id="description"></span>
+              <br />
+              Humidity: <span class="details" id="humidity"></span> , Wind:
+              <span class="details" id="wind-speed"></span>
+            </p>
+          </div>
+          <div id="icon"></div>
+        </div>
+      </main>
+      <footer>
+        This project was coded by <a href="">Solomiia Fedyshyn</a>, is
+        open-sourced on <a href="">GitHub</a> and hosted on
+        <a href=""> Netlify</a>
+      </footer>
+    </div>
     <script src="src/script.js"></script>
   </body>
 </html>

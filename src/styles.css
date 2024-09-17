@@ -89,6 +89,11 @@ a {
   justify-content: space-between;
 }
 
+.last-update-time {
+  font-size: 12px;
+  line-height: 2;
+}
+
 .icon {
   margin-top: 30px;
   margin-right: 25px;
@@ -172,6 +177,10 @@ a {
   p,
   footer {
     font-size: 12px;
+  }
+
+  .last-update-time {
+    font-size: 10px;
   }
 
   .icon {

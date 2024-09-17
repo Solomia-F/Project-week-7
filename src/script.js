@@ -6,11 +6,13 @@ function refreshWeather(response) {
   let humidityElement = document.querySelector("#humidity");
   let windSpeedElement = document.querySelector("#wind-speed");
   let timeElement = document.querySelector("#time");
+  let updateTimeElement = document.querySelector("#last-update-time");
   let date = new Date(response.data.time * 1000);
   let iconElement = document.querySelector("#icon");
 
   city.innerHTML = response.data.city;
   timeElement.innerHTML = formatDate(date);
+  updateTimeElement.innerHTML = updateTime(date);
   descriptionElement.innerHTML = response.data.condition.description;
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
   windSpeedElement.innerHTML = `${response.data.wind.speed}km/H`;
@@ -20,8 +22,6 @@ function refreshWeather(response) {
 }
 
 function formatDate(date) {
-  let minutes = date.getMinutes();
-  let hours = date.getHours();
   let days = [
     "Sunday",
     "Monday",
@@ -31,14 +31,37 @@ function formatDate(date) {
     "Friday",
     "Saturday",
   ];
+  let months = [
+    "Jan",
+    "Feb",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "Aug",
+    "Sept",
+    "Oct",
+    "Nov",
+    "Dec",
+  ];
 
+  let dates = date.getDate();
   let day = days[date.getDay()];
+  let month = months[date.getMonth()];
+
+  return `${day} | ${dates} ${month}`;
+}
+
+function updateTime(date) {
+  let minutes = date.getMinutes();
+  let hours = date.getHours();
 
   if (minutes < 10) {
     minutes = `0${minutes}`;
   }
 
-  return `${day} | ${hours}:${minutes} `;
+  return `Last update: ${hours}:${minutes}`;
 }
 
 function search(city) {

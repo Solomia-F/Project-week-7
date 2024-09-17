@@ -104,6 +104,32 @@ a {
   height: 120px;
 }
 
+.weather-forecast {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.weather-forecast-date {
+  text-align: center;
+}
+
+.weather-forecast-icon {
+  text-align: center;
+  font-size: 38px;
+}
+
+.weather-forecast-temperatures {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #b03853;
+}
+
+.weather-forecast-temperature {
+  padding: 0 5px;
+}
+
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .container {
     max-width: 70%;

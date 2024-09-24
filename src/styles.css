@@ -238,12 +238,13 @@ a {
     height: 50px;
   }
   .weather-forecast {
-    flex-wrap: wrap;
-    margin-top: 0;
+    display: block;
   }
   .weather-forecast-day {
     width: 50%;
-    margin-top: 20px;
+    margin: 0 auto;
+    border-top: 1px solid #fff;
+    padding: 20px 40px;
   }
   .weather-forecast-date,
   .weather-forecast-temperatures {

@@ -127,31 +127,46 @@ function changeBackground(response) {
 
   console.log(condition);
 
-  if (condition === "clear-sky-day") {
+  if (condition === "clear-sky-day" || condition === "clear-sky-night") {
     document.getElementById("bg-img").style.backgroundImage =
       "url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/144/597/original/sun-rays-cloudy-sky_%281%29.jpg?1727007945')";
-  } else if (condition === "few-clouds-day") {
+  } else if (
+    condition === "few-clouds-day" ||
+    condition === "few-clouds-night"
+  ) {
     document.getElementById("bg-img").style.backgroundImage =
       "url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/144/475/original/cloudy-sky-daylight-background.jpg?1726923284')";
-  } else if (condition === "scattered-clouds-day") {
+  } else if (
+    condition === "scattered-clouds-day" ||
+    condition === "scattered-clouds-night"
+  ) {
     document.getElementById("bg-img").style.backgroundImage =
       "url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/144/473/original/blue-sky-with-white-clouds-background.jpg?1726923265')";
-  } else if (condition === "broken-clouds-day") {
+  } else if (
+    condition === "broken-clouds-day" ||
+    condition === "broken-clouds-night"
+  ) {
     document.getElementById("bg-img").style.backgroundImage =
       "url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/144/599/original/closeup-large-gray-clouds.jpg?1727009773')";
-  } else if (condition === "shower-rain-day") {
+  } else if (
+    condition === "shower-rain-day" ||
+    condition === "shower-rain-night"
+  ) {
     document.getElementById("bg-img").style.backgroundImage =
       "url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/144/604/original/camper-window-with-rain-drops_%281%29.jpg?1727010534')";
-  } else if (condition === "rain-day") {
+  } else if (condition === "rain-day" || condition === "rain-night") {
     document.getElementById("bg-img").style.backgroundImage =
       "url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/144/596/original/rain-outside-windows-villa.jpg?1727007304')";
-  } else if (condition === "thunderstorm-day") {
+  } else if (
+    condition === "thunderstorm-day" ||
+    condition === "thunderstorm-night"
+  ) {
     document.getElementById("bg-img").style.backgroundImage =
       "url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/144/479/original/mesmerizing-scene-lightning-thunderstorm-night.jpg?1726923331')";
-  } else if (condition === "snow-day") {
+  } else if (condition === "snow-day" || condition === "snow-night") {
     document.getElementById("bg-img").style.backgroundImage =
       "url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/144/482/original/snow-setting-on-a-pine-tree.-photo-p-parnxoxo.jpg?1726923365')";
-  } else if (condition === "mist-day") {
+  } else if (condition === "mist-day" || condition === "mist-night") {
     document.getElementById("bg-img").style.backgroundImage =
       "url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/144/478/original/les-tuman-utro-proseka-tumannoe-utro-tumannyi-les-oboi.jpg?1726923318')";
   }

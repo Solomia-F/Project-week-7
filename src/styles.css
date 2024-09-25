@@ -230,8 +230,6 @@ a {
   }
   .icon {
     margin-right: 0;
-    padding-top: 20px;
-    padding-left: 20px;
   }
   .current-weather-icon {
     width: 70px;
@@ -249,6 +247,7 @@ a {
   .weather-forecast-date,
   .weather-forecast-temperatures {
     font-size: 14px;
+    font-weight: 600;
   }
   .weather-forecast-icon img {
     width: 60px;

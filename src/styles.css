@@ -227,6 +227,7 @@ a {
 
   .icon {
     margin-right: 0;
+    margin-top: 20px;
   }
   .current-weather-icon {
     width: 80px;

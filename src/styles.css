@@ -198,11 +198,11 @@ a {
 
   footer {
     margin-top: 20px;
+    font-size: 12px;
   }
 
-  p,
-  footer {
-    font-size: 12px;
+  p {
+    font-size: 16px;
   }
 
   h1 {
@@ -225,15 +225,12 @@ a {
     padding: 4px 15px;
   }
 
-  .last-update-time {
-    font-size: 10px;
-  }
   .icon {
     margin-right: 0;
   }
   .current-weather-icon {
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
   }
   .weather-forecast {
     display: block;
@@ -246,11 +243,11 @@ a {
   }
   .weather-forecast-date,
   .weather-forecast-temperatures {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
   }
   .weather-forecast-icon img {
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
   }
 }
